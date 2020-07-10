@@ -1,0 +1,93 @@
+
+<ng-container style="min-width: 100%; min-height: 100%; z-index: 1; position: relative;" *ngIf="loading" >
+  <div class="d-flex justify-content-center loading">
+    <p class="loader" >Loading</p>
+  </div>
+</ng-container>
+
+<ng-container>
+  <div class = "container back " *ngFor="let h of hData">
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+          <h1 style="font-family:'Bebas Neue', cursive;" class="tag" >{{h.tag}}</h1>
+        </div>
+    </div>
+  </div>
+
+  <div class=" row d-flex justify-content-center">
+  
+    <div class="row d-flex justify-content-center" style="width: 100%;">
+      <p class="about">About E-Cell</p>
+    </div>
+  
+    <div class="row d-flex justify-content-center" style="width: 100%; margin-top: 2%; " *ngFor="let h of hData">
+      <div class="col">
+        <p class="aboutCont"><b>{{h.about}}</b></p>
+      </div>
+  
+      <div class="col secondcol">
+        <img class="img-fluid bulb"src="https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2FBackLogo-1%20(1).png?alt=media&token=479397b6-593b-48de-bac0-5846b32a6bf1" (load)="loading = false"/>
+      </div>
+    </div>
+  
+  </div>
+  
+  <div class=" row d-flex justify-content-center">
+  
+    <div class="row d-flex justify-content-center" style="width: 100%;">
+      <p class="about">Upcoming Event</p>
+    </div>
+  
+    <div class="row d-flex justify-content-center upcoming" style="width: 100%; margin-top: 2%;" >
+  
+      <div class="col-sm d-flex justify-content-left ">
+        <img class="img-fluid upcomingimage shadow" src="{{uData[0].image}}}" />
+      </div>
+  
+      <div class="col d-flex justify-content-center">
+  
+        <div class="upcomingcont">
+          <p class="about"><b>{{upTitle}}</b></p>
+          <p>{{upDesc | truncatetext:300}}<span class="readmore">read more</span></p>
+          <ng-container *ngIf="regEnabled; else customLink">
+            <button type="button" routerLink="register/{{upId}}" style="float: bottom; font-weight: 700;" class="btn btn-success text-white">Register</button>
+          </ng-container>
+          <ng-template #customLink>
+            <button type="button" style="float: bottom; font-weight: 700;" class="btn btn-success text-white"><a target="_blank" style="color: #fff; text-decoration: none;" attr.href="{{upLink}}" >Register</a></button>
+          </ng-template>
+        </div>
+      </div>
+      
+    </div>
+  
+  </div>
+  
+  
+  
+  <div class="row d-flex justify-content-center" >
+  
+    <div class="row d-flex justify-content-center" style="height: auto;" *ngFor="let b of bData">
+  
+      <div class="row d-flex justify-content-center" style="width: 100%; margin-top: 5%; ">
+        <p class="about">"{{b.title}}"</p>
+      </div>
+      
+      <div class="blogcont row d-flex justify-content-center" style="width: 100%; ">
+        <div class="col" style="display: inline; ">
+  
+          <p>{{b.content | truncatetext:250}}<span class="readmore" routerLink="/blog">read more</span></p>
+  
+        </div>
+      </div>
+  
+      <div class="blogauth row d-flex justify-content-center" style="width: 100%;">
+        <p><b> - By {{b.author}}</b></p>
+      </div>
+    
+    </div>
+  
+  </div>
+  
+</ng-container>
+
+

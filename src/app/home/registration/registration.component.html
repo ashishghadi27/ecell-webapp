@@ -1,0 +1,76 @@
+<ng-container style="min-width: 100%; min-height: 100%; z-index: 1; position: relative;" *ngIf="loading" >
+  <div class="d-flex justify-content-center loading">
+    <p class="loader" >Loading</p>
+  </div>
+</ng-container>
+
+<ng-container>
+  <div class = "container back ">
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+          <h1 style="font-family:'Bebas Neue', cursive;" class="tag" >{{uData.title}}</h1>
+        </div>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container class="d-flex justify-content-center">
+
+  <h1 style="text-align: center; margin-bottom: 5%; font-weight: 700;">Register</h1>
+
+  <div class="formDiv row d-flex justify-content-center">
+    <mat-form-field class="textfields" appearance="outline">
+      <mat-label>First Name</mat-label>
+      <input [(ngModel)]="fname" matInput placeholder="Type Here">
+    </mat-form-field>
+
+    <mat-form-field class="textfields" appearance="outline">
+      <mat-label>Last Name</mat-label>
+      <input [(ngModel)]="lname"  matInput placeholder="Type Here">
+    </mat-form-field>
+
+    <mat-form-field class="textfields" appearance="outline">
+      <mat-label>Email-Id</mat-label>
+      <input [(ngModel)]="email" type="email"  matInput placeholder="Type Here">
+    </mat-form-field>
+
+    <mat-form-field class="textfields" appearance="outline">
+      <mat-label>Contact Number</mat-label>
+      <input [(ngModel)]="contact" type="tel" maxlength="10"  matInput placeholder="Type Here">
+    </mat-form-field>
+
+    <div class="row w-100 textfields">
+      <div class="col d-flex justify-content-center" style="width: 100%;">
+          <mat-form-field style="width: 91%; " appearance="outline">
+            <mat-label>Year</mat-label>
+            <mat-select [(ngModel)]="class">
+              <mat-option style="background-color: rgb(170, 97, 238); font-weight: 700;" *ngFor="let y of yData " [value]="y.name" >
+                {{y.name}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+      </div>
+
+      <div class="col d-flex justify-content-center" >
+          <mat-form-field style="width: 91%;" appearance="outline">
+            <mat-label>Division</mat-label>
+            <mat-select [(ngModel)]="division">
+              <mat-option style="background-color: rgb(170, 97, 238); font-weight: 700;" *ngFor="let d of dData " [value]="d.num" >
+                {{d.num}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+      </div>
+      
+    </div>
+
+    <mat-form-field class="textfields" appearance="outline">
+      <mat-label>Roll Number</mat-label>
+      <input [(ngModel)]="rollno" type="number" maxlength="3"  matInput placeholder="Type Here">
+    </mat-form-field>
+
+    <button class="registerbutton textfields" mat-raised-button color="primary" (click)="register()"[disabled]="!fname || !lname || !email || !contact || !class || !division || !rollno">{{buttonText}}</button>
+
+  </div>
+
+</ng-container>

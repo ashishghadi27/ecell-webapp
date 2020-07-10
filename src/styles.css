@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+}
+
+::-webkit-scrollbar {
+    max-width: 0px; /* remove scrollbar space /*/
+    background: transparent; /* optional: just make scrollbar invisible */
+    }
+
+body{
+    /*background: url("https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2F2558256.png?alt=media&token=ab17d5ab-08a4-4760-81c4-1550d438242b");*/
+    background: url("https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2FLeave-20s-1536px%20(1).png?alt=media&token=56388066-24c3-4645-88c3-fcfce20e08ac"); 
+    background-repeat: repeat;
+    background-color: #fff;
+    
+}
+
+*{
+    font-family: 'Quicksand',sans-serif;
+    
+}
+
+*:focus {
+    outline: none !important;
+}
+
+@media screen and (max-width:800px) {
+
+    body{
+       /* background: url("https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2FParticles-0.1s-1536px.png?alt=media&token=b81635d7-34b5-4b8f-b570-332eb5552910");
+        background-repeat: repeat;*/
+        /*background-size: 100% 100%;
+        background-repeat: no-repeat;*/
+        background-size: 100% 30%;
+    }
+
+}

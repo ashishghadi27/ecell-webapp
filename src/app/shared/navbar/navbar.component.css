@@ -1,0 +1,253 @@
+*{margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    
+}
+#main{
+    width:100%;
+    height: auto;
+    
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background-color:#FFFFFF;
+     box-shadow: 0px 0px 10px grey;
+    
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px;
+   
+}
+nav ul li{
+    margin-top: 40px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    padding: 30px;
+    font-weight: bold;
+    
+}
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: None;
+}
+
+img.logo{
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 85px;
+    height: 80px;
+}
+
+#check{
+    display: none;
+}
+
+.closebtn{
+    visibility: hidden;
+}
+
+.paget{
+    font-family: Quicksand, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.spanner{
+    margin-left: 30px;
+}
+
+.footerlogo{
+    width: 250px;
+    height: 230px;
+    background-color: #802edf;
+    margin-top: 30%;
+}
+
+.readmore{
+    color: #fff;
+    font-weight: 700; 
+    font-size: 20px; 
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 10px;
+    width: 130%;
+    background-color: #802edf;
+  }
+  
+  .readmore:hover{
+   
+    
+    text-underline-position: none; 
+    transition: transform .5s; /* Animation */
+    filter: drop-shadow(1px 1px 1px #222); 
+    transform: scale(1.1);
+    
+  }
+
+  .back{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2FLeave-10s-1536px%20(2).png?alt=media&token=c009d006-8149-473a-ad57-20363f15f883');
+    background-repeat: no-repeat;
+    min-width: 100%;
+    background-color: #802edf;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    box-shadow: 8px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }  
+
+  .lists{
+      margin-top: 2%;
+      display: block;
+      background-color: #802edf;
+      padding-right: 10%;      
+  }
+
+
+  .colladdr{
+    text-align: justify;
+    color: #fff;
+    font-weight: 700; 
+    font-size: 20px; 
+    margin-top: 10%;
+    margin-bottom: 1%;
+    padding: 10px;
+  }
+
+  .mail{
+    text-align: justify;
+    color: #fff;
+    font-weight: 700; 
+    font-size: 20px; 
+    margin-top: 3%;
+    margin-bottom: 1%;
+    padding: 10px;
+  }
+
+.addrcont{
+    width: 50%;
+}
+
+.copyright{
+    font-weight: 700; font-size: 20px; margin-top: 3%; background-color: #751fd6;
+}
+
+@media (max-width: 952px){
+    img.logo{
+        font-size: 30px;
+        padding-left: 10px;
+        margin-left: 10px;
+        width: 70px;
+        height: 60px;
+    }
+
+    nav{
+        height: 80px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    .closebtn{
+        visibility: visible;
+    }
+
+    
+}
+@media (max-width: 858px){
+
+    .hambutton{
+        margin-top: 25px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        background: url("https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2Fnavback.png?alt=media&token=7d45fdab-605f-4b8d-b0b9-40c0f2846df2");
+        z-index: 1;
+        background-size: 150% 40%;
+        background-repeat: repeat;
+        
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        
+    }
+
+    .paget{
+        font-family: Quicksand, sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    .spanner{
+        margin-left: 0px;
+    }
+
+    .footerlogo{
+        width: 100px;
+        height: 110px;
+        background-color: #802edf;
+        margin-top: 5%;
+    }
+
+    .lists{
+        display: none;
+    }
+
+    .addrcont{
+        width: 100%;
+        background-color: #802edf;
+    }
+
+    .colladdr{
+        font-size: 12px; 
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right: 10%;
+        padding: 0px;
+    }
+
+    .mail{
+        font-size: 12px; 
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right: 10%;
+        padding: 0px;
+    }
+
+    .copyright{
+        font-weight: 700; font-size: 15px; margin-top: 3%; 
+    }
+    
+    
+}

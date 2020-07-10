@@ -1,0 +1,123 @@
+
+.tag{
+    font-size: 90px;
+    margin-top: 5%;
+    margin-left:35%;
+    margin-right: 35%;
+    margin-bottom: 15%;
+    color: #000;
+    font-style: italic;
+    filter: drop-shadow(3px 3px 3px #222); 
+  }
+  
+  .loading{
+    min-width: 800px; 
+    min-height: 2000px;
+    background:#fff;
+    
+  }
+  
+  .loader {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: Quicksand, sans-serif;
+    background: linear-gradient(to right, #751fd6 10%, #fff 50%, #751fd6 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+    margin-top: 15%;
+  }
+  
+  @keyframes textclip {
+      to {
+          background-position: 200% center;
+      }
+  }
+
+  
+.back{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2Fpurplewave.png?alt=media&token=cf9e62fb-c8d7-4b2b-9e1f-fe3ffdac866a');
+    background-repeat: no-repeat;
+    min-width: 100%;
+    background-size: 100% 100%;
+    
+}
+
+.formDiv{
+    width: 100%;
+    
+}
+
+.textfields{
+    width: 80%;
+    margin-left: 20%;
+    margin-right: 17%;
+    font-size: 17px;
+    color: rgb(61, 61, 61);
+    margin-bottom: 1%;
+}
+
+mat-form-field{
+ font-weight: 700;   
+}
+
+.registerbutton{
+    font-weight: 700; 
+    border-radius: 5px; 
+    padding: 15px;
+    font-size: 25px;
+    width: 100%;
+    color: #fff;
+}
+@media screen and (max-width:800px) {
+
+    /*.secondcol{
+      display: none;
+    }*/
+    .loader{
+      font-size: 40px;
+      margin-top: 60%;
+    }
+  
+    .loading{
+      min-width: 100%;
+      min-height: 1500px;
+      
+    }
+  
+  
+    .tag{
+      font-size: 40px;
+      text-align: center;
+      margin-top: 20%;
+      margin-left: 30%;
+      margin-right: 30%;
+      margin-bottom: 40%;
+      filter: drop-shadow(3px 3px 3px #222); 
+    }
+
+    .textfields{
+        margin-left: 5%;
+        margin-right: 0%;
+        font-size: 15px;
+        
+    }
+
+    .registerbutton{
+        font-weight: 700; 
+        border-radius: 5px; 
+        padding: 10px;
+        font-size: 20px;
+        width: 80%;
+    }
+
+}
+  

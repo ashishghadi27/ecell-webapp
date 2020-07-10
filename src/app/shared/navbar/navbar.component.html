@@ -1,0 +1,108 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<div>
+  <nav >
+    <div >
+      <div id="main" style="position: fixed; z-index: 1;" *ngFor="let h of hData">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars hambutton"></i>
+            </label>
+            <img routerLink="/" class="logo" src= "https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2FOld%20Logo%201.png?alt=media&token=1ab64c96-9f65-49ca-8811-927d997fe483" >
+            <ul>
+                
+                <li routerLink="/" ><label for="check" ><p class="paget">Home</p></label></li><span class="spanner"></span>
+                <li routerLink="/events" ><label for="check" class="paget">Events</label></li><span class="spanner"></span>
+                <li routerLink="/council" ><label for="check" class="paget">Council</label></li><span class="spanner"></span>
+                <li routerLink="/blog" ><label for="check" class="paget">Blog</label></li><span class="spanner"></span>
+                <li routerLink="/contact" ><label for="check" class="paget">Contact</label></li><span class="spanner"></span>
+                <br>
+                <label for="check" class="closebtn">
+                  <i class="fa fa-times-circle hambutton"></i>
+              </label>
+            </ul>
+        </nav>
+    </div>
+    </div>
+  </nav>
+  <router-outlet ></router-outlet>
+  <!-- Footer -->
+<footer class="page-footer font-small blue pt-4 back" style="margin-top: 3%;" *ngFor="let h of hData">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col d-flex justify-content-center">
+
+        <!-- Content -->
+        <div>
+          <!--<div class="row d-flex justify-content-center" style="width: 100%; "><h5 class="text-uppercase">E-Cell</h5></div>-->
+          <div>
+            <img routerLink="/" class="footerlogo" src= "https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2FOld%20Logo%201.png?alt=media&token=1ab64c96-9f65-49ca-8811-927d997fe483" >
+          </div>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+      
+
+      <!-- Grid column -->
+      <div class="col" class="lists">
+
+        <!-- Links -->
+        <h2 style="font-weight: 700; color: #fff; filter: drop-shadow(1px 1px 1px #222);  margin-top: 5%;">Links</h2>
+        
+
+        <ul class="list-group list-group-flush" style="background-color: #802edf;">
+          <li routerLink="/" class="list-group-item readmore" >Home</li>
+          <li routerLink="events" class="list-group-item readmore">Events</li>
+          <li routerLink="/council" class="list-group-item readmore">Council</li>
+          <li routerLink="/blog" class="list-group-item readmore">Blog</li>
+          <li routerLink="/contact" class="list-group-item readmore">Contact</li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col">
+
+        <div class="row" style="width: 100%;" class="d-flex justify-content-center">
+          <!--<div class="col">
+            <img routerLink="/"  src= "{{h.sakec}}" >
+          </div>-->
+  
+          <div class="row addrcont">
+            <p class="colladdr">{{h.address}}</p>
+            <p class="mail"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; &nbsp; {{h.ecellmail}}</p>
+            
+          </div>
+
+          
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 copyright">© 2020 Copyright:
+    <p style="color: #fff;">E-CELL SAKEC</p>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</div>

@@ -1,0 +1,159 @@
+.loading{
+  min-width: 800px; 
+  min-height: 1000px;
+  background:#fff;
+  
+}
+
+
+
+.loader {
+  color: #fff;
+  font-size: 80px;
+  font-family: "ubuntu";
+  font-weight: 700;
+  font-family: Quicksand, sans-serif;
+  background: linear-gradient(to right, #751fd6 10%, #fff 50%, #751fd6 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+  margin-top: 15%;
+}
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+
+.tag{
+    font-size: 90px;
+    margin-top: 10%;
+    margin-left:35%;
+    margin-right: 35%;
+    margin-bottom: 15%;
+    color: #000;
+    font-style: italic;
+    filter: drop-shadow(3px 3px 3px #222); 
+  }
+ 
+.back{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2Fpurplewave.png?alt=media&token=cf9e62fb-c8d7-4b2b-9e1f-fe3ffdac866a');
+    background-repeat: no-repeat;
+    min-width: 100%;
+    background-size: 100% 100%;
+}
+
+.teamname{
+  font-family: Quicksand, sans-serif; 
+  font-weight: 700;
+  font-size: 60px;
+  filter: drop-shadow(1px 1px 1px #222); 
+}
+
+.mainrow {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 0px;
+  margin-bottom: 7%;
+}
+
+ng-container{
+  padding: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#mycont{
+  border-radius: 10px;
+  width: 450px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.card{
+  height: 450px;
+}
+
+.name{
+  font-family: Quicksand, sans-serif; 
+  font-weight: 700;
+  filter: drop-shadow(7px 7px 7px #222); 
+  font-size: 25px;
+}
+
+.myimg{
+  border: none;
+}
+
+.mainback{
+  background: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width:800px) {
+
+  .mainback{
+    background: url("https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2FLeave-20s-1536px%20(1).png?alt=media&token=56388066-24c3-4645-88c3-fcfce20e08ac"); 
+    background-repeat: repeat;
+    background-color: #fff;
+    background-size: 80% 10%;
+  }
+
+  .loader{
+    font-size: 40px;
+    margin-top: 60%;
+  }
+
+  .loading{
+    min-width: 100%;
+    min-height: 1000px;
+    
+  }
+
+    .tag{
+      font-size: 40px;
+      text-align: center;
+      margin-top: 30%;
+      margin-left: 30%;
+      margin-right: 30%;
+      margin-bottom: 45%;
+      filter: drop-shadow(3px 3px 3px #222); 
+    }
+
+    .teamname{
+        font-weight: 700;
+        font-size: 25px;
+        
+    }
+
+    .mainrow {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(30%, 1fr));
+      grid-auto-rows: auto;
+      grid-gap: 10px;
+      max-width:100%;
+      margin-top: -10px;
+    }
+
+    .card{
+      height: 300px;
+    }
+
+    #mycont{
+      width: 300px;
+      margin-top: 10px;
+    }
+
+    
+  
+}  

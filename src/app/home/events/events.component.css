@@ -1,0 +1,32 @@
+.tag{
+    font-size: 90px;
+    margin-top: 15%;
+    margin-left:35%;
+    margin-right: 35%;
+    margin-bottom: 15%;
+    color: #000;
+    font-style: italic;
+    filter: drop-shadow(3px 3px 3px #222); 
+  }
+ 
+.back{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2FWave-10s-1536px.png?alt=media&token=f254a362-ce29-48bd-87cf-80256fd19ce3');
+    background-repeat: no-repeat;
+    min-width: 100%;
+    background-size: 100% 100%;
+}
+
+
+@media screen and (max-width:800px) {
+
+    .tag{
+      font-size: 40px;
+      text-align: center;
+      margin-top: 20%;
+      margin-left: 40%;
+      margin-right: 30%;
+      margin-bottom: 40%;
+      filter: drop-shadow(3px 3px 3px #222); 
+    }
+  
+  }  

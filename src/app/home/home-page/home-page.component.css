@@ -1,0 +1,205 @@
+
+.tag{
+  font-size: 90px;
+  margin-top: 5%;
+  margin-left:35%;
+  margin-right: 35%;
+  margin-bottom: 15%;
+  color: #000;
+  font-style: italic;
+  filter: drop-shadow(3px 3px 3px #222); 
+}
+
+.loading{
+  min-width: 800px; 
+  min-height: 2000px;
+  background:#fff;
+  
+}
+
+.loader {
+  color: #fff;
+  font-size: 80px;
+  font-weight: 700;
+  font-family: Quicksand, sans-serif;
+  background: linear-gradient(to right, #751fd6 10%, #fff 50%, #751fd6 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+  margin-top: 15%;
+}
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+
+
+.tagcont{
+  margin-top: 100px;
+}
+
+.back{
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2Fpurplewave.png?alt=media&token=cf9e62fb-c8d7-4b2b-9e1f-fe3ffdac866a');
+  background-repeat: no-repeat;
+  min-width: 100%;
+  background-size: 100% 100%;
+  
+}
+
+.bulb{
+  width: 40%;
+  height: 110%;
+  margin-top: -7%;
+  margin-left: 30%;
+  filter: drop-shadow(1px 1px 1px #222); 
+  
+}
+
+.about{
+  font-family: Quicksand; 
+  font-weight: 900;
+  font-size: 50px;
+  color: black;
+}
+
+.aboutCont{
+  font-family: Quicksand; 
+  font-weight: 700;
+  font-size: 35px;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 12%;
+  text-align: justify;
+  
+}
+
+.blogcont{
+  font-size: 30px;
+  margin-left: 7%;
+  margin-right: 7%;
+  text-align: justify;
+  font-weight: 700;
+  color: rgb(58, 50, 50);
+}
+
+.blogauth{
+  font-size: 25px;
+  text-align: justify;
+  color: #000;
+}
+
+.readmore{
+  color: crimson;
+  
+  
+}
+
+.readmore:hover{
+ 
+  transition: transform 1s; /* Animation */
+  filter: drop-shadow(3px 3px 3px crimson); 
+  transform: scale(1.5);
+}
+
+.upcoming{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 7%;
+}
+
+.upcomingimage{
+  border-radius: 10px;
+  width: 80%;
+  height: 80%;
+}
+
+.upcomingcont{
+  text-align: justify;
+  font-size: 25px;
+  margin-left: -15%;
+  font-weight: 700;
+}
+
+@media screen and (max-width:800px) {
+
+  /*.secondcol{
+    display: none;
+  }*/
+  .loader{
+    font-size: 40px;
+    margin-top: 60%;
+  }
+
+  .loading{
+    min-width: 100%;
+    min-height: 1500px;
+    
+  }
+
+
+  .tag{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 40%;
+    filter: drop-shadow(3px 3px 3px #222); 
+  }
+
+
+  .bulb{
+    width: 70%;
+    height: 90%;
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+
+  .about{
+    font-weight: 700;
+    font-size: 27px;
+  }
+  
+  .aboutCont{
+    font-size: 15px;
+    margin-left: 10%;
+    margin-right: 0%;
+  }
+
+  .blogcont{
+    font-size: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .blogauth{
+    font-size: 20px;
+  }
+
+  .upcomingimage{
+    width: auto;
+    height: auto;
+  }
+
+  .upcomingcont{
+    margin-top: 5%;
+    margin-left: 0%;
+    font-size: 15px;
+  }
+
+  
+
+}
+
+
+
