@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { HomeModel, BlogModel, Upcoming } from 'src/app/home/home-model';
 import { DatahandlerService } from '../datahandler.service';
 
@@ -23,6 +22,7 @@ export class HomePageComponent implements OnInit {
   upTitle;
   upLink;
   upId;
+  upImage;
 
   hData:HomeModel[]
   bData:BlogModel[]
@@ -48,6 +48,7 @@ export class HomePageComponent implements OnInit {
       this.upId = data[0].id;
       this.upTitle = data[0].title;
       this.upDesc = data[0].description;
+      this.upImage = data[0].image;
       if(this.uData[0].link === 'website'){
         this.regEnabled = true;
       }

@@ -3,9 +3,46 @@
       <div class="col d-flex justify-content-center">
         <h1 style="font-family:'Bebas Neue', cursive;" class="tag" >Events</h1>
       </div>
-      
   </div>
 
+  
 
 </div>
+<h2 class="heading">Upcoming Events</h2>
+<div style="width: 100%; text-align: center;" class="upcoming">
+  
+  <div  *ngFor="let p of uData">
+    <div class="shadow parent" routerLink="upcoming/{{p.id}}">
+      <div class="postcard ">
+          <img class="bigimage" src="{{p.image}}" />
+      </div>
+      <p class="postTitle" style=" font-weight: 700;">{{p.title}}</p>
+      <p class="postDate">{{p.date}}</p>
+      <p style="font-weight: 700;">By <span class="postAuthor"> {{p.speakers}}</span></p>
+      <ng-container *ngIf="p.link == 'website'; else customLink">
+        <button type="button" routerLink="/register/{{p.id}}" style="float: bottom; font-weight: 700;" class="btn btn-success text-white">Register</button>
+      </ng-container>
+      <ng-template #customLink>
+        <button type="button" style="float: bottom; font-weight: 700;" class="btn btn-success text-white"><a target="_blank" style="color: #fff; text-decoration: none;" attr.href="{{p.link}}" >Register</a></button>
+      </ng-template>
+    </div>
+  </div>
+
+  
+</div>
+<h2 class="heading" style="margin-top: 5%;">Events</h2>
+<div style="width: 100%; text-align: center;" class="upcoming">
+    <div  *ngFor="let p of eData">
+      <div class="shadow parent" routerLink="upcoming/{{p.id}}">
+        <div class="postcard ">
+            <img class="bigimage" src="{{p.image}}" />
+        </div>
+        <p class="postTitle" style=" font-weight: 700;">{{p.title}}</p>
+        <p class="postDate">{{p.date}}</p>
+        <p style="font-weight: 700;">By <span class="postAuthor"> {{p.speakers}}</span></p>
+        <button type="button" routerLink="/upcoming/{{p.id}}" style="float: bottom; font-weight: 700;" class="btn btn-success text-white">Checkout</button>
+      </div>
+    </div>
+</div>
+
 

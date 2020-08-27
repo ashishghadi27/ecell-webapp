@@ -24,20 +24,6 @@
           <ng-container *ngFor="let m of mData">
                <div *ngIf="m.team===t.name" class="shadow p-3" id="mycont">
     
-                <!--<div class="card" >
-    
-                  
-                    <img class="card-img-top h-75 d-inline-block" src="{{m.image}}" alt="Card image cap">
-                
-                
-                    <div class="card-body">
-                      <h5 class="card-title">{{m.name}}</h5>
-                      <p class="card-text">{{m.position}}</p>
-                    </div>
-             
-    
-                </div>-->
-    
                 <div class="card bg-transparent text-white">
                   <img class="card-img h-100 d-inline-block myimg" src="{{m.image}}" alt="Card image" (load)="loading = false"/>
                   <div class="card-img-overlay d-flex align-items-end" >

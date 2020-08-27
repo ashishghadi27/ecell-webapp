@@ -49,7 +49,7 @@
 }
 
 .back{
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2Fpurplewave.png?alt=media&token=cf9e62fb-c8d7-4b2b-9e1f-fe3ffdac866a');
+  background-image: url('src/assets/purplewave.png');
   background-repeat: no-repeat;
   min-width: 100%;
   background-size: 100% 100%;
@@ -100,8 +100,6 @@
 
 .readmore{
   color: crimson;
-  
-  
 }
 
 .readmore:hover{
@@ -126,9 +124,11 @@
 .upcomingcont{
   text-align: justify;
   font-size: 25px;
-  margin-left: -15%;
+  margin-left: -20%;
   font-weight: 700;
 }
+
+
 
 @media screen and (max-width:800px) {
 

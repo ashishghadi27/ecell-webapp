@@ -10,10 +10,79 @@
   }
  
 .back{
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2FWave-10s-1536px.png?alt=media&token=f254a362-ce29-48bd-87cf-80256fd19ce3');
+    background-image: url('src/assets/purplewave.png');
     background-repeat: no-repeat;
     min-width: 100%;
     background-size: 100% 100%;
+}
+
+.heading{
+  font-family: Quicksand; 
+  font-weight: 700;
+  text-align: center;
+  font-size: 35px;
+}
+
+.upcoming{
+  width: 100%;
+  display: grid;
+  grid-template-columns:47% 47%;
+  grid-gap: 40px;
+  padding-right: 0px;
+  padding-left: 30px;
+  
+}
+
+.parent{
+  padding: 20px; 
+  border-style: solid;
+  border-color: #751fd6;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-width: 5px;
+  margin-top: 10px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.postcard{
+    width: 100%;
+}
+
+.bigimage{
+    width: 100%;
+    height: 300px;
+    margin: 20px;
+    margin-top: 0;
+    margin-left: 0;
+    border-radius: 10px;
+    border: none;
+}
+
+.postTitle{
+    font-size: 25px;
+}
+
+.postAuthor{
+    font-size: 18px;
+    font-weight: 700;
+    color: crimson;
+    margin-top: -12px;
+}
+
+.postDate{
+    font-size: 15px;
+    margin-top: -12px;
+    color: gray;
+    font-weight: 700;
+}
+
+.postMeta{
+    font-size: 17px;
+    margin-top: -12px;
+    text-align: justify;
+    font-weight: 700;
 }
 
 
@@ -28,5 +97,30 @@
       margin-bottom: 40%;
       filter: drop-shadow(3px 3px 3px #222); 
     }
+
+    .parent{
+      margin-left:20px;
+      margin-right:20px;
+    }
+
+    .upcoming{
+      display: inline;
+    }
+
+    .postTitle{
+      font-size: 22px;
+    }
   
-  }  
+  .postAuthor{
+      font-size: 16px;
+    }
+  
+  .postDate{
+      font-size: 14px;
+  }
+  
+  .postMeta{
+      font-size: 15px;
+  }
+  
+}  

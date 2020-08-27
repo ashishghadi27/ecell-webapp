@@ -25,6 +25,19 @@ export class Upcoming{
     link:string
     image:string
     description:string
+    date:string
+    speakers: string
+}
+
+export class Event{
+    id:string
+    title:string
+    youtube:string
+    facebook:string
+    instagram:string
+    image:string
+    description:string
+    date:string
 }
 
 export class Teams{
