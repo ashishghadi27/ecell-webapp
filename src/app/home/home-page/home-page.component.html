@@ -32,7 +32,7 @@
   
   </div>
   
-  <div class=" row d-flex justify-content-center" routerLink="upcoming/{{upId}}">
+  <div class=" row d-flex justify-content-center" *ngIf="upId">
   
     <div class="row d-flex justify-content-center" style="width: 100%;">
       <p class="about">Upcoming Event</p>
@@ -44,11 +44,11 @@
         <img class="img-fluid upcomingimage shadow" src="{{upImage}}}" />
       </div>
   
-      <div class="col d-flex justify-content-center">
+      <div class="col d-flex">
   
         <div class="upcomingcont">
           <p class="about"><b>{{upTitle}}</b></p>
-          <p>{{upDesc | truncatetext:300}}<span class="readmore">read more</span></p>
+          <p>{{upDesc | truncatetext:300}}<span class="readmore" routerLink="upcoming/{{upId}}"> ...read more</span></p>
           <ng-container *ngIf="regEnabled; else customLink">
             <button type="button" routerLink="register/{{upId}}" style="float: bottom; font-weight: 700;" class="btn btn-success text-white">Register</button>
           </ng-container>
@@ -64,7 +64,7 @@
   
   
   
-  <div class="row d-flex justify-content-center" style="margin-top: -10%;" >
+  <div class="row d-flex justify-content-center blogsec" >
   
     <div class="row d-flex justify-content-center" style="height: auto;" *ngFor="let b of bData">
   

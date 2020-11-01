@@ -1,0 +1,79 @@
+
+<ng-container style="min-width: 100%; min-height: 100%; z-index: 1; position: relative;" *ngIf="loading" >
+  <div class="d-flex justify-content-center loading">
+    <p class="loader" >Loading</p>
+  </div>
+</ng-container>
+
+
+<ng-container>
+
+  <div class = "container back ">
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+          <h1 style="font-family:'Bebas Neue', cursive;" class="tag" >{{bData.title}}</h1>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <ng-container class="row shadow"  *ngIf="bData.youtube">
+        <div class="playercont d-flex justify-content-center">
+          <iframe class="player" [src]="trustedUrl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </ng-container>
+
+        <ng-container class="row shadow"  *ngIf="bData.image">
+          <div class="playercont d-flex justify-content-center">
+            <img src="{{bData.image}}" (load)="loading = false" class="player" alt="eventImage"/>
+          </div>
+        </ng-container>
+      
+        <div class="visiblerow">
+       
+
+          <ng-container *ngIf="bData.instagram" >
+            <div  style="margin: 5%;">
+              <div class="instagram shadow" style="border-radius: 10px; padding: 5%; color: #fff; ">
+                  <h1 style="font-family: 'Dancing Script', cursive;  ">
+                    <i color="accent" class="fa fa-instagram " aria-hidden="true"></i>
+                    Instagram
+                  </h1>
+
+                  <h2 style="font-weight: 700;">Content Available</h2>
+
+                  <a target="_blank" class="readmore" href="{{bData.instagram}}"><b>Click here to visit link</b></a>
+              </div>
+            </div>
+          </ng-container>
+
+
+        </div>
+
+        <div class="row blogcontent">
+          {{bData.description}}
+        </div>
+        
+
+    </div>
+
+    <div class="col-4 col-md-4 visiblecol">
+      <ng-container *ngIf="bData.instagram" >
+        <div  style="margin: 7%;">
+          <div class="instagram shadow" style="border-radius: 10px; padding: 5%; color: #fff; ">
+              <h1 style="font-family: 'Dancing Script', cursive;  ">
+                <i color="accent" class="fa fa-instagram " aria-hidden="true"></i>
+                Instagram
+              </h1>
+
+              <h2 style="font-weight: 700;">Content Available</h2>
+
+              <a target="_blank" class="readmore" href="{{bData.instagram}}"><b>Click here to visit link</b></a>
+          </div>
+        </div>
+      </ng-container>
+    </div>  
+  </div>
+</ng-container>

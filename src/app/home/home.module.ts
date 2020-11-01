@@ -8,6 +8,7 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { UpcomingdetailComponent } from './upcomingdetail/upcomingdetail.component';
+import { EventdetailComponent } from './eventdetail/eventdetail.component';
 
 
 const routes: Routes = [
@@ -18,10 +19,11 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'register/:id', component: RegistrationComponent },
   { path: 'upcoming/:id', component: UpcomingdetailComponent },
+  { path: 'checkEvent/:id', component: EventdetailComponent },
 ]
 
 @NgModule({
-  declarations: [HomePageComponent, CouncilComponent, EventsComponent, BlogComponent, ContactComponent, RegistrationComponent, UpcomingdetailComponent],
+  declarations: [HomePageComponent, CouncilComponent, EventsComponent, BlogComponent, ContactComponent, RegistrationComponent, UpcomingdetailComponent, EventdetailComponent],
   imports: [
     SharedModule, RouterModule.forChild(routes)
   ]

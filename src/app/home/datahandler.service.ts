@@ -115,6 +115,11 @@ export class DatahandlerService {
       return this.upcomingDataDoc.valueChanges()
     }
 
+    getEventData(id:string){
+      this.eventDataDoc = this.afs.doc<Event>(`events/${id}`)
+      return this.eventDataDoc.valueChanges()
+    }
+
     register(id:string, data: Registration){
       this.registrationDataCollection = this.afs.collection(`upcoming/${id}/registrations`);
       this.registrationDataCollection.add(data);

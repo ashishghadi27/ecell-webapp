@@ -1,10 +1,43 @@
-<div class = "container back">
-  <div class="row">
-      <div class="col d-flex justify-content-center">
-        <h1 style="font-family:'Bebas Neue', cursive;" class="tag" >Upcoming Event Details</h1>
-      </div>
+
+<ng-container style="min-width: 100%; min-height: 100%; z-index: 1; position: relative;" *ngIf="loading" >
+  <div class="d-flex justify-content-center loading">
+    <p class="loader" >Loading</p>
+  </div>
+</ng-container>
+
+
+<ng-container>
+
+  <div class = "container back ">
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+          <h1 style="font-family:'Bebas Neue', cursive;" class="tag" >{{bData.title}}</h1>
+        </div>
+    </div>
   </div>
 
-  
-</div>
+  <div class="row">
+    <div class="col-12 col-md-8">
+        <ng-container class="row shadow"  *ngIf="bData.image">
+          <div class="playercont d-flex justify-content-center">
+            <img src="{{bData.image}}" (load)="loading = false" class="player" alt="eventImage"/>
+          </div>
+        </ng-container>
 
+        <div class="row blogcontent">
+          {{bData.description}}
+        </div>
+        
+        <div class="row blogcontent">
+          <ng-container *ngIf="regEnabled; else customLink">
+            <button type="button" routerLink="/register/{{upId}}" style="float: bottom; font-weight: 700;" class="btn btn-success text-white">Register</button>
+          </ng-container>
+          <ng-template #customLink>
+            <button type="button" style="float: bottom; font-weight: 700;" class="btn btn-success text-white"><a target="_blank" style="color: #fff; text-decoration: none;" attr.href="{{bData.link}}" >Register</a></button>
+          </ng-template>
+        </div>
+
+    </div>
+ 
+  </div>
+</ng-container>

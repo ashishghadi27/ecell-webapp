@@ -26,14 +26,13 @@ export class Upcoming{
     image:string
     description:string
     date:string
-    speakers: string
 }
 
 export class Event{
     id:string
     title:string
     youtube:string
-    facebook:string
+    speakers:string
     instagram:string
     image:string
     description:string

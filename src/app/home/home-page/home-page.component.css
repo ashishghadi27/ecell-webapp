@@ -128,7 +128,9 @@
   font-weight: 700;
 }
 
-
+.blogsec{
+  margin-top: -10%;
+}
 
 @media screen and (max-width:800px) {
 
@@ -197,7 +199,9 @@
     font-size: 15px;
   }
 
-  
+  .blogsec{
+    margin-top: 0%;
+  }
 
 }
 
